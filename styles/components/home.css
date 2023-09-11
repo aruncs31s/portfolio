@@ -1,8 +1,8 @@
 .home{
-    background: #102938;
+    /* background: #102938; */
     /* background-image: url("https://cdn.pixabay.com/photo/2020/06/24/05/29/tree-5334823_960_720.png"); */
     /* background: black; */
-    background-image: url("../../public/parttern/tree.png");
+    background-image: url(public\img\background_1.png);
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: 100% 0%;
