@@ -52,3 +52,8 @@ button{
     width: 100vw;
     height: 100vh;
 }
+
+.flex {
+    display : flex;
+    padding-right: 20px;
+}
