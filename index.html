@@ -17,14 +17,17 @@
 <body>
     <section class="home" id="home">
         <header>
+            <!-- <div class="logo">
+                <img src="public\img\logo.png" alt="">
+            </div> -->
             <div class="header-brand">
                 <a href="#home"><h1>Asha<span>worth</span></h1></a>
             </div>
             <div class="header-menu">
                 <a href="#home"><button class="custom-btn"><span>Homepage</span></button></a>
                 <a href="#about"><button class="custom-btn"><span>About</span></button></a>
-                <a href="#collection"><button class="custom-btn"><span>Notifications</span></button></a>
-                <a href="#photos"><button class="custom-btn"><span>Photo</span></button></a>
+                <a href="#schedule"><button class="custom-btn"><span>Notifications</span></button></a>
+                <a href="#photos"><button class="custom-btn"><span>Gallery</span></button></a>
                 <a href="#schedule"><button class="custom-btn"><span>Schedule</span></button></a>
                 <a href="#habit"><button class="custom-btn"><span>Habit</span></button></a>
                 <a href="#contact"><button class="custom-btn"><span>Contact</span></button></a>
@@ -35,7 +38,7 @@
                 <h1>NURTURING HEARTS <br>ENRICHING LIVES</h1>
                 <div class="flex">
                 <a href="#about"><button><i class="fa-solid fa-compass"></i>More Info</button></a>
-                <a href="#collection"><button><i></i>Get Started</button></a>
+                <a href="#collection"><button><i></i>Get Started </button></a>
                 </div>
             </div>
         </div>
@@ -46,7 +49,7 @@
         </div>
         <div class="about-content">
             <div class="about-content-avatar">
-                <img src="public/img/avatar.jpg" alt="avatar" width="350" height="350">
+                <img src="public\img\About_icon.jpg" alt="avatar" width="350" height="350">
             </div>
             <div class="about-content-desc">
                 <h3>Nurturing Hearts <br> Enriching Lives!</h3>
@@ -60,10 +63,23 @@
     </section>
     <section class="collection" id="collection">
         <div class="collection-title">
-            <h1><i class="fa-solid fa-folder-plus"></i>Get Started</h1>
+            <h1>Get Started</h1>
         </div>
         <div class="collection-content">
-            <div>
+            <div class="dropdown">
+                <select name="municipality">
+                    <option value="nil">SELECT PANCHAYAT / MUNICIPALITY ..</option>
+                </select>
+            </div>
+            <div class="login-select">
+                <div class="ashaworker">
+                    <h2>Login as Ashaworker</h2>
+                </div>
+                <div class="healthcarer">
+                    <h2>Login as healthcarer</h2>
+                </div>
+            </div>
+            <!-- <div>
                 <i class="fa-solid fa-chart-line"></i>
                 <h2>Advertising</h2>
                 <small>Attract customers with digital marketing plans and marketing campaigns.</small>
@@ -92,12 +108,12 @@
                 <i class="fa-solid fa-database"></i>
                 <h2>Database</h2>
                 <small>Manage the database and any system information that connects the server and the client.</small>
-            </div>
+            </div> -->
         </div>
     </section>
     <section class="photos" id="photos">
         <div class="photos-title">
-            <h1><i class="fa-solid fa-image"></i>My Libraries</h1>
+            <h1><i class="fa-solid fa-image"></i>Gallery</h1>
         </div>
         <div class="photos-content">
             <div class="bg-cell">
@@ -132,10 +148,70 @@
     </section>
     <section class="schedule" id="schedule">
         <div class="schedule-title">
-            <h1><i class="fa-solid fa-graduation-cap"></i>Schedule</h1>
+            <h1><i class="fa-solid fa-graduation-cap"></i>Notifications</h1>
         </div>
         <div class="schedule-content">
-            <div>
+            <table>
+                <tr>
+                    <td>
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                    </td>
+                    <td>Name1</td>
+                    <td><div class="appointment">Appointment Scheduled</div></td>
+                    <td class="date">View Date</td>
+                </tr>
+                <tr>
+                    <td><label class="container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label></td>
+                    <td>Name2</td>
+                    <td><div class="appointment">Appointment Scheduled</div></td>
+                    <td class="date">View Date</td>
+                </tr>
+                <tr>
+                    <td><label class="container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label></td>
+                    <td>Name3</td>
+                    <td>
+                        <div class="appointment">Appointment Scheduled</div>
+                    </td>
+                    <td class="date">View Date</td>
+                </tr>
+                <tr>
+                    <td><label class="container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label></td>
+                    <td>Name4</td>
+                    <td><div class="appointment">Appointment Scheduled</div></td>
+                    <td class="date">View Date</td>
+                </tr>
+                <tr>
+                    <td><label class="container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label></td>
+                    <td>Name5</td>
+                    <td><div class="appointment">Appointment Scheduled</div></td>
+                    <td class="date">View Date</td>
+                </tr>
+                <tr>
+                    <td><label class="container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label></td>
+                    <td>Name6</td>
+                    <td><div class="appointment">Appointment Scheduled</div></td>
+                    <td class="date">View Date</td>
+                </tr>
+            </table>
+            <!-- <div>
                 <img src="http://cloudstechnologies.in/asset/img/slider-img/homepage-img-1.png" alt="_blank">
             </div>
             <div>
@@ -177,7 +253,7 @@
                     <img src="public/technology/bootstrap.svg" alt="bootstrap">
                     <img src="public/technology/databse.svg" alt="database">
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <section class="habit" id="habit">

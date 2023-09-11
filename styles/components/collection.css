@@ -1,7 +1,7 @@
 .collection {
   padding: 7rem 0;
   font-family: var(--font);
-  color: white;
+  color: black;
 }
 .collection-title h1 {
   text-align: center;
@@ -16,8 +16,8 @@
 }
 .collection-content {
   padding: 0 3rem;
-  display: flex;
-  justify-content: space-around;
+  display: block;
+  justify-content:center;
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
@@ -25,15 +25,14 @@
 .collection-content > div {
   flex: 30%;
   text-align: center;
-  background: #dc143c;
+  /* background: #dc143c; */
   border-radius: 0.75rem;
   padding: 2rem 1rem;
   margin: 1.4rem 0.7rem 0 0;
   transition: 0.2s linear;
   cursor: pointer;
-  border: 2px solid #dc143c;
 }
-.collection-content > div:nth-child(2n){
+/* .collection-content > div:nth-child(2n){
   background: transparent;
 }
 .collection-content > div:nth-child(2n):hover{
@@ -62,4 +61,54 @@
 }
 .collection-content > div:hover:nth-child(2n) > i{
   color: white;
+} */
+
+.dropdown select {
+  width : 90%;
+  height : 90px;
+  font-size: larger;
+  border-radius: 20px;
+  padding: 0 20px;
+  color :darkgray;
+  justify-content : center;
+  align-items: center;
+  text-align: center;
 }
+
+.login-select {
+  color:white;
+  display : flex;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-select > div > h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.75rem 0;
+}
+
+.login-select > div {
+  flex: 30%;
+  text-align: center;
+  background: #ab2c5b;
+  border-radius: 2rem;
+  padding: 2rem 2rem;
+  margin: 1.4rem 0.7rem 0 4rem;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+.ashaworker:hover {
+  background-color: white;
+  border : 2px solid #ab2c5b;
+  color :#ab2c5b;
+}
+
+.healthcarer:hover {
+  background-color: white;
+  border : 2px solid #ab2c5b;
+  color :#ab2c5b;
+}
+

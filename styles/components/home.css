@@ -2,20 +2,21 @@
     /* background: #102938; */
     /* background-image: url("https://cdn.pixabay.com/photo/2020/06/24/05/29/tree-5334823_960_720.png"); */
     /* background: black; */
-    background-image: url(public\img\background_1.png);
-    background-size: 60%;
+    /* background-image: url("../../public/img/background_1.png"); */
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: 100% 0%;
     font-family: var(--font);
 }
 
-h3 {
-    padding: auto;
+.logo img {
+    width : 80px;
+    height : 80px;
 }
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: center;
     padding: 1.2rem 5rem 1.2rem 10rem;
     position: fixed;
@@ -25,6 +26,7 @@ header{
     transition: 0.3s ease-out;
     z-index: 9;
 }
+
 
 header.sticky {
     background: #F4F5F6;
@@ -50,10 +52,10 @@ header.sticky .header-brand > a {
 }
 
 header.sticky .custom-btn:hover{
-    color: var(--red);
+    color: #ab2c5b;
 }
 .header-brand span{
-    color: var(--red);
+    color: #b53967;
 }
 .header-menu{
     display: flex;
@@ -79,7 +81,7 @@ header.sticky .custom-btn {
     padding: 0;
 }
 .custom-btn:hover {
-    color: #f0094a;
+    color: #ab2c5b;
     background: transparent;
     box-shadow: none;
 }
@@ -114,18 +116,19 @@ header.sticky .custom-btn {
     align-items: center;
     color: white;
     padding-right: 20px;
-    padding-top: 25%;
+    padding-top: 19%;
     padding-left: 10rem;
 }
 
 .home-content a {
-    padding-right : 10px;
+    padding-top : 10px;
+    padding-right : 20px;
 }
 
 .home-content > div button{
     padding: 0.75rem 3rem;
     border-radius: 0.5rem;
-    background: var(--red);
+    background: #b53967;
     cursor: pointer;
     font-size: 1.2rem;
     color: white;
@@ -139,8 +142,8 @@ header.sticky .custom-btn {
 
 .home-content > div button:hover{
     background: transparent;
-    border: 2px solid var(--red);
-    color: var(--red);
+    border: 2px solid #ab2c5b;
+    color: #ab2c5b;
 }
 .home-content > div > h3{
     font-size: 1.5rem;
@@ -150,3 +153,4 @@ header.sticky .custom-btn {
     font-size: 4rem;
     margin: 1rem 0;
 }
+
